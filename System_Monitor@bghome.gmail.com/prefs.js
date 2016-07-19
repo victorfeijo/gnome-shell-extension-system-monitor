@@ -226,6 +226,7 @@ const SystemMonitorPrefsWidget = new GObject.Class({
         general_page.add_boolean('Enable network indicator.', PrefsKeys.NETWORK_METER);
         general_page.add_boolean('Enable swap indicator.', PrefsKeys.SWAP_METER);
         general_page.add_boolean('Enable system load indicator.', PrefsKeys.LOAD_METER);
+        general_page.add_boolean('Enable position on left.', PrefsKeys.POSITION_LEFT);
 
         let pages = [
             {

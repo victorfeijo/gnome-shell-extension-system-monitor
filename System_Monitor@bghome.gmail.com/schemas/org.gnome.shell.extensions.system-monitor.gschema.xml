@@ -36,5 +36,10 @@
         <summary>Enable system load indicator.</summary>
         <description>Turn on or off the system load indicator.</description>
     </key>
+    <key type="b" name="position-left">
+        <default>false</default>
+        <summary>Enable position on left.</summary>
+        <description>Move the system monitor to left.</description>
+    </key>
   </schema>
 </schemalist>

@@ -37,7 +37,13 @@ const Menu = new Lang.Class({
 
     	this.actor.add_actor(this._layout);
 
-    	Panel.addToStatusArea('system-monitor', this, 1, 'right');
+      if ( PrefsKeys.POSITION_LEFT ) {
+        Panel.addToStatusArea('system-monitor', this, 1, 'right');
+      }
+      else {
+        Panel.addToStatusArea('system-monitor', this, 1, 'center');
+      }
+
     },
     _createIcon: function(type) {
         let icon = FactoryModule.AbstractFactory.create('icon', type);
